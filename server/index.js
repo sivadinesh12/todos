@@ -14,7 +14,9 @@ app.listen(5000, () => {
 main().catch((err) => console.log(err.message));
 
 async function main() {
-  await mongoose.connect("mongodb://localhost:27017/todoDB");
+  await mongoose.connect(
+    "mongodb+srv://dsiva7199:xqeQgLem2Cj0GrdM@tododb.nktb7ka.mongodb.net/?retryWrites=true&w=majority&appName=todoDB"
+  );
   console.log("db connected");
 }
 
