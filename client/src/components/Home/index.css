@@ -1,0 +1,162 @@
+.icon {
+  display: none;
+}
+.todoList {
+  list-style-type: none;
+  padding: 20px;
+  align-self: center;
+  justify-self: center;
+  height: 100vh;
+  border: 2px #ff6f00 solid;
+  border-radius: 8px;
+  overflow: auto;
+  min-width: 200px;
+  width: 70%;
+}
+.bg-container {
+  background-color: #1f1f1f;
+  height: 100vh;display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav > h1 {
+  color: #ffa500;
+  font-size: 25px;
+  font-family: Inter;
+  font-weight: 700;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  color: #ffa500;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.popup-content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 400px;
+  overflow-y: auto;
+  width: 300px;
+}
+
+.popup-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #ff6f00;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.popup-button:hover {
+  background-color: #ffa500;
+}
+.err {
+  color: red;
+  font-family: Inter;
+}
+.add-input-container > input {
+  height: 30px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px #ff6f00 solid;
+  outline:none;
+}
+.add-btn {
+  color: #ffffff;
+  background-color: #ff6f00;
+  height: 30px;
+  width: 60px;
+  font-weight: 500;
+  font-family: Inter;
+  border: none;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .bg-container {
+    background-color: #1f1f1f;
+    height: 100vh;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav > h1 {
+    color: #ffa500;
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 700;
+  }
+  nav > div {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    color: #ffa500;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .popup-content {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 400px;
+    overflow-y: auto;
+    width: 300px;
+  }
+
+  .popup-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .popup-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #ff6f00;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+
+  .popup-button:hover {
+    background-color: #ffa500;
+  }
+  .err {
+    color: red;
+    font-family: Inter;
+  }
+  .icon {
+    display: block;
+  }
+  .add-input-container{
+    display: none;
+  }
+}
