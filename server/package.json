@@ -4,7 +4,7 @@
   "description": "A simple TODO application backend using Express and Mongoose",
   "main": "script.js",
   "scripts": {
-    "dev": "nodemon script.js",
+    "dev": "nodemon index.js",
     "test": "jest"
   },
   "keywords": [],
