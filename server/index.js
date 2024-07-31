@@ -1,11 +1,12 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const Todos = require("./todo");
-const cors = require("cors")
+const cors = require("cors");
 
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 app.listen(5000, () => {
   console.log("App running on localhost 5000");
@@ -14,9 +15,7 @@ app.listen(5000, () => {
 main().catch((err) => console.log(err.message));
 
 async function main() {
-  await mongoose.connect(
-    "mongodb+srv://dsiva7199:xqeQgLem2Cj0GrdM@tododb.nktb7ka.mongodb.net/?retryWrites=true&w=majority&appName=todoDB"
-  );
+  await mongoose.connect(process.env.MONGODB_URI);
   console.log("db connected");
 }
 
